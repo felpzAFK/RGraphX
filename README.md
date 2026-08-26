@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/d63f2bff-4a29-450f-977e-91f12c43501f" width="250" title="RGraphX Logo">
+  <img src="https://github.com/user-attachments/assets/268a3a1c-7286-49fd-86bd-4eea6a24ec5b" width="500" title="RGraphX Logo">
 </p>
 
 **RGraphX** é um laboratório de testes em formato de aplicativo mobile desenvolvido para a disciplina de **Código de Alta Performance Mobile**
