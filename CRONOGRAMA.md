@@ -1,4 +1,4 @@
-🗓️ Cronograma RGraphX (Setembro a Novembro / 2026)
+Cronograma RGraphX (Setembro a Novembro / 2026)
 Sprint 1: Fundação e Prova de Conceito (14/09 a 29/09)
 
 O objetivo desta quinzena é ter um app feio, mas que não crasha ao processar uma foto.
