@@ -22,6 +22,9 @@ O objetivo desta quinzena é ter um app feio, mas que não crasha ao processar u
     Arthur (Assets/Dataset):
 
         Até 18/09: Criar uma pasta no Drive e baixar 15 imagens em resoluções absurdas (4K, 8K) com muitas texturas (natureza, cidades) para os testes.
+*       **MARCO IMPORTANTE - 29/09:** Apresentação da Prévia para o Professor. 
+    * *O que vamos mostrar:* O design do Alex, o repositório criado por mim (felpz), a pasta de assets do Arthur e o console do Gabriel rodando o OpenCV sem erro.
+
 
 Sprint 2: Integração e Coroutines (30/09 a 15/10)
 
@@ -46,6 +49,9 @@ Aqui o Front-End e o Back-End se conectam. O app começa a funcionar de verdade.
         Até 02/10: Extrair os ícones que o Alex usou no Figma e te entregar tudo em formato SVG mastigado.
 
         Até 10/10: Abrir o Word/Docs e criar a estrutura do relatório final (Capa, Objetivos, Metodologia) para não acumular pro fim do semestre.
+
+*       **MARCO IMPORTANTE - 06/10:** Prova AV1 (Objetiva). 
+    * *Foco da Equipe:* Usar os conceitos do projeto (Garbage Collector, Memory Leaks, Threads, JNI) como base de estudo para a prova.
 
 Sprint 3: O Laboratório de Stress (16/10 a 05/11)
 
