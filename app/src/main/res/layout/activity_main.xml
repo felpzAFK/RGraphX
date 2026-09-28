@@ -1,19 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#050505"
+    android:padding="16dp"
     tools:context=".MainActivity">
-
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/txtTelemetry"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="> RGraphX // CORE_SYSTEM_READY\n> MEMORY_LEAK_TRACKING: ONLINE\n> AWAITING_EXECUTION..."
+        android:textColor="#00FF00"
+        android:fontFamily="monospace"
+        android:textSize="12sp"
+        android:background="#1A1A1A"
+        android:padding="8dp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/toolPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="#121212"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/txtTelemetry"
+        app:layout_constraintBottom_toTopOf="@id/consolePanel"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- button1: Processar Imagem -->
+        <Button
+            android:id="@+id/btnProcess"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:text="EXE"
+            android:textColor="#00FF00"
+            android:backgroundTint="#222222"
+            android:fontFamily="monospace"
+            android:padding="0dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="0dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- button2  Canny Edge  -->
+        <Button
+            android:id="@+id/btnEdge"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:text="EDG"
+            android:textColor="#00FFFF"
+            android:backgroundTint="#222222"
+            android:fontFamily="monospace"
+            android:padding="0dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="0dp"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- button 3 Stress Test -->
+        <Button
+            android:id="@+id/btnStress"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:text="STR"
+            android:textColor="#FF0000"
+            android:backgroundTint="#330000"
+            android:fontFamily="monospace"
+            android:padding="0dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="0dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgLab"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#0A0A0A"
+        android:scaleType="fitCenter"
+        android:src="@drawable/rgraphicon"
+        app:layout_constraintTop_toBottomOf="@id/txtTelemetry"
+        app:layout_constraintBottom_toTopOf="@id/consolePanel"
+        app:layout_constraintStart_toEndOf="@id/toolPanel"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- PAINEL DE CONSOLE (A caixa em baixo que cospe dados reais) -->
+    <ScrollView
+        android:id="@+id/consolePanel"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="#0A0A0A"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/txtConsoleOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[10:09:52 PM] - SYSTEM: UI Initialized.\n[10:09:52 PM] - C++ NDK: Idle.\n[10:09:52 PM] - Awaiting user input..."
+            android:textColor="#AAAAAA"
+            android:fontFamily="monospace"
+            android:textSize="12sp" />
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
