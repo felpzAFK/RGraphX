@@ -24,4 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "RGraphX"
 include(":app")
- 
+include(":opencv")
