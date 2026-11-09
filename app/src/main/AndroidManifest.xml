@@ -11,16 +11,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RGraphX">
+
+        <!-- Permite usar o Android Profiler (CPU/memória) também na build release -->
+        <profileable
+            android:shell="true"
+            tools:targetApi="29" />
+        <!-- Retrato fixo: girar a tela recriaria a Activity e interromperia testes longos -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:windowSoftInputMode="adjustResize">
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".StressTestActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"
+            tools:ignore="LockedOrientationActivity" />
     </application>
 
 </manifest>

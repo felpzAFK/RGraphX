@@ -2,4 +2,21 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Paleta "laboratório / terminal" do RGraphX -->
+    <color name="lab_bg">#FF07090C</color>
+    <color name="lab_surface">#FF0D1117</color>
+    <color name="lab_surface_2">#FF121820</color>
+    <color name="lab_console">#FF05070A</color>
+    <color name="lab_stroke">#FF1F2A33</color>
+    <color name="lab_text">#FFC9D1D9</color>
+    <color name="lab_text_dim">#FF6E7D8A</color>
+    <color name="lab_console_text">#FF8FD9A8</color>
+
+    <color name="lab_green">#FF39FF88</color>
+    <color name="lab_cyan">#FF22D3EE</color>
+    <color name="lab_purple">#FFB388FF</color>
+    <color name="lab_amber">#FFFFC857</color>
+    <color name="lab_red">#FFFF5C6C</color>
+    <color name="lab_blue">#FF5AA9FF</color>
 </resources>
