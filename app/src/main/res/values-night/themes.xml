@@ -1,7 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.RGraphX" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <!-- Igual ao tema claro: o RGraphX é sempre escuro -->
+    <style name="Base.Theme.RGraphX" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/lab_green</item>
+        <item name="colorOnPrimary">@color/lab_bg</item>
+        <item name="colorSecondary">@color/lab_cyan</item>
+        <item name="android:colorBackground">@color/lab_bg</item>
+        <item name="android:windowBackground">@color/lab_bg</item>
+        <item name="colorSurface">@color/lab_surface</item>
+        <item name="colorOnSurface">@color/lab_text</item>
     </style>
 </resources>

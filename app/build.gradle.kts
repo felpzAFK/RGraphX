@@ -50,6 +50,11 @@ android {
             optimization {
                 enable = false
             }
+            // Projeto acadêmico: assina a release com a chave de debug para poder
+            // instalar direto pelo Android Studio. É a variante certa para o benchmark,
+            // porque compila o C++ com otimização e o Kotlin sem o modo debuggable.
+            // NÃO use assim para publicar na Play Store.
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
     compileOptions {
